@@ -24,7 +24,6 @@ export function buildServer() {
 
   fastify.register(fastifyAutoload, {
     dir: joinPath(import.meta, 'routes'),
-    // indexPattern: /.*(route).(ts|js)/,
     ignorePattern: /.*(controller|service|schema).(ts|js)/
   })
 
